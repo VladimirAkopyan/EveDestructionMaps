@@ -1,0 +1,541 @@
+/*
+1) Define the font face, style, etc
+2) Define the site pallette
+3) Define commonly used items
+4) Define specific items
+5) Finally unique items to that page are done locally
+*/
+
+
+/* general UI styles */
+* {
+ padding:0px;
+ line-height:1.5em;
+ margin:0px
+}
+body {
+ background:url("/images/bg2.png") top center no-repeat #000000;
+ color:#FFF;
+ font-family:Arial, Lucida Sans Unicode, Lucida Grande, sans-serif;
+ font-size:12px;
+}
+a {
+ font-weight:bold;
+ color:#77ddc9;
+}
+ul {
+ margin-top:7px;
+ margin-left:10px;
+ list-style:none;
+}
+ol {
+ margin-left:35px;
+}
+ul li {
+/* background:url("/images/arrow_right.png") top left no-repeat;*/
+ margin-bottom:3px;
+ padding-left:17px;
+}
+ol li {
+ margin-bottom:3px;
+ padding-left:8px;
+}
+h1,h2,h3,h4,h5,h6 {
+ color:#ffe87f;
+ text-transform:uppercase;
+/* margin-left:5px;*/
+}
+h1 {
+ font-size:28px;
+ margin-top:10px;
+}
+h2 {
+ font-size:20px;
+ margin-top:10px;
+}
+h3 {
+ font-size:18px;
+ margin-top:9px;
+}
+h4 {
+ font-size:16px;
+ margin-top:8px;
+}
+h5 {
+ color:#ffe87f;
+ font-size:14px;
+ margin-top:7px;
+}
+h6 {
+ color:#ffe87f;
+ font-size:12px;
+ margin-top:6px;
+}
+p {
+ margin:6px;
+ margin-left:8px;
+}
+form {
+ margin:0px;
+ padding:0px;
+}
+table {
+/* width:100%;*/
+ font-size:12px; /* for some retarded reason this doesn't inherit from body */
+}
+th {
+ font-size:12px;
+ text-align:left;
+}
+td {
+ padding-left:7px;
+ padding-right:7px;
+}
+
+input[type=button] {
+ padding:3px;
+}
+
+input[type=submit] {
+ padding:3px;
+}
+
+.checkbox {
+ width:19px;
+ height:19px;
+ padding:0 5px 0 0;
+/* background:url(../images/checkbox.png) no-repeat;*/
+ display:block;
+ float:left;
+}
+.radio {
+ width:19px;
+ height:25px;
+ padding:0 5px 0 0;
+/* background:url(../images/checkbox.png) no-repeat;*/
+ display:block;
+ clear:left;
+ float:left;
+}
+
+
+
+.hisec {
+ color:#5dd850;
+}
+.nullsec {
+ color:#f14a3b;
+}
+.lowsec {
+ color:#f7941d;
+}
+.numeric {
+ text-align:right;
+}
+
+
+
+/* logo */
+.header img {
+ border:0px;
+}
+
+
+
+
+/* top navigation bar */
+#menu_border {
+ padding:1px 10px 1px 10px;
+ width:97%;
+ background:url("/images/border.png") repeat;
+}
+#menu {
+ padding:1 1 1 8;
+ width:100%;
+ background:#282828;
+ text-transform:uppercase;
+ font-weight:bold;
+ vertical-align:middle;
+}
+#menu input {
+ padding:0px 0px 0px 4px;
+ width:275px;
+ height:30px;
+}
+#menu a {
+ margin:0px 0px 0px 10px;
+ padding:6px 10px 6px 10px;
+ background:black;
+ border:1px solid #444444;
+ text-decoration:none;
+}
+
+
+
+
+
+
+/* main content box */
+#content_border {
+ padding:2px 10px 2px 10px;
+ width:97%;
+ background:url("/images/border.png") repeat;
+}
+#content {
+ background:#131313;
+ width:100%;
+ padding:7px;
+}
+
+table.One {
+ color:#888;
+ width:100%;
+ background:#282828;
+ opacity:0.9;
+ filter:alpha(opacity=90);
+ height:30px;
+ top:0px;
+ display:block;
+}
+table.One th { padding:5px; }
+table.One td { padding:5px; }
+
+
+
+
+
+table td.R1 { background-color:rgba(0,0,0,0); }
+table td.R2 { background-color:rgba(255,255,255,0.05); }
+
+td.sell     { background-color:#440000; }
+td.buy      { background-color:#004400; }
+table td.R1_buy  { background-color:rgba(0,64,0,1); }
+table td.R2_buy  { background-color:rgba(0,64,0,0.95); }
+table td.R1_sell { background-color:rgba(64,0,0,1); }
+table td.R2_sell { background-color:rgba(64,0,0,0.95); }
+table.lightborder td
+,table td.lightborder { border:1px solid rgba(255,255,255,0.2); }
+table.noborder td
+,table td.noborder { border:0px; }
+.trans10
+
+tr.center td
+,tr.center th
+,td.center
+,th.center
+,.center { text-align:center; }
+
+/* general formatting for right-align table cells */
+/*
+*/
+table td.isk
+, table td.money
+, table td.volume
+, table td.qty
+, table td.number
+, table th.isk
+, table th.money
+, table th.volume
+, table th.qty
+{ text-align:right; }
+table td.total {
+ border-top:1px solid #888888;
+}
+
+table td.current_station     { background-color:#191959; }
+table td.current_solarsystem { background-color:#195919; }
+table td.current_region      {  }
+
+
+/* specific styles for the main content box */
+content_main_inner input {
+ padding:4px;
+ margin:0px 3px 3px 3px;
+ font-size:14px;
+}
+content_main_inner .checkbox {
+ margin-top:9px;
+}
+
+
+
+
+
+
+
+
+
+/* price_check.php shows the product hierarchy */
+table.hierarchy {
+ margin:0px;
+ padding:0px;
+ background:#3e3e3e;
+ font-size:10pt
+}
+
+table.hierarchy img {
+ padding:0px;
+}
+
+table.hierarchy a {
+ margin:0px;
+ padding:0px 5px 0px 5px;
+ white-space:nowrap;
+ vertical-align:middle;
+}
+
+
+
+
+
+
+
+/* main table on the home page */
+table.home_main td {
+ border-top: 1px solid #888888;
+/* font-size:11pt*/
+}
+table.home_main td.icon {
+ padding:0px;
+ margin:0px;
+}
+table.home_main td.link {
+ padding:0px 5px 0px 5px;
+ margin:0;
+ white-space:nowrap;
+}
+table.home_main td.desc {
+ padding:0px 5px 0px 5px;
+ margin:0;
+}
+
+div.login_box {
+ padding:5px;
+ margin:5px;
+ border:1px solid red;
+}
+div.login_box table td {
+ vertical-align:top;
+ padding:1px 3px 1px 3px;
+}
+
+
+
+
+/* price_check.php main table */
+#price_check table {
+
+}
+
+#price_check tr {
+
+}
+
+#price_check th {
+
+}
+
+#price_check td {
+ border-bottom:1px solid #444444;
+}
+
+
+
+
+/* /mining.php */
+table.mining th { text-align:center; background-color:#333333; border:1px solid #666666; padding: 0 3 0 3; }
+table.mining td { vertical-align:middle; border-left:1px solid #444444; border-right:1px solid #444444; border-top:0px; border-bottom:1px solid #666666; }
+table.mining td.name               { text-align:center; background-color:#333333; }
+table.mining td.price              { text-align:right;  background-color:#333333; }
+table.mining td.refine_zero        { text-align:center; color:#666666; }
+table.mining td.refine_nonzero     { text-align:right; }
+table.mining td.r_title            { text-align:right; }
+table.mining td.r_volume           { text-align:right; }
+table.mining td.r_isk_per_m3       { text-align:right; }
+table.mining td.r_isk_per_hour     { text-align:right; }
+table.mining span.isk_per_unit     {  }
+table.mining span.refined          { color:#888bf3; }
+table.mining span.ore              { color:#d26e6e; }
+
+/*
+span.mining_mine_batch             { color:#928b41; }
+span.mining_mine_per_unit          { color:#5c9241; }
+*/
+
+
+/* /freight.php */
+div.freight_php {  }
+div.freight_php td { vertical-align:top; }
+div.freight_php table.details td { border:1px solid #444444; }
+
+
+/* /downloads.php */
+div.downloads_php { }
+div.downloads_php div.main_download_link               { margin:5px; padding:10px; background-color:#222222; }
+div.downloads_php div.main_download_link.img           { text-align:center; padding:5; border:0; }
+div.downloads_php div.main_download_link div.make_sure { margin:5px; padding:10px; background-color:#333333; border:1px solid #888888; }
+div.downloads_php div.other                            { padding-top:30px; }
+
+/* /developers/google_docs.php */
+table.google_docs_example { display:block; }
+table.google_docs_example td { padding:1px 3px 1px 3px; }
+table.google_docs_example td.A { background-color:#333333; }
+table.google_docs_example td.B { background-color:#222222; }
+table.google_docs_example td.line_num { font-size:300%; }
+
+
+
+
+
+div.pay {
+ padding:10px;
+ margin:10px;
+ border:1px solid blue;
+}
+div.pay div.title {
+ color:#ffe87f;
+ text-transform:uppercase;
+ margin-left:5px;
+ margin-left:15px;
+ font-size:28px;
+ margin-top:10px;
+}
+
+div.signup {
+ width:350px;
+ margin:30px;
+ padding:15px;
+ text-align:center;
+ vertical-align:middle;
+ border:2px solid #77ddff;
+}
+div.signup a {
+ color:#77ddff;
+}
+
+span.order_is_npc         { color:#e00000; font-size:small; }
+
+span.seconds_ago          { font-style:italic; }
+span.seconds_ago_good     { color:#08ab00; }
+span.seconds_ago_ok       { color:#a5ab00; }
+span.seconds_ago_soso     { color:#ab8500; }
+span.seconds_ago_bad      { color:#e07e00; }
+span.seconds_ago_terrible { color:#e00000; }
+
+.num_jumps    { }
+.num_jumps_0  { color:#00bb00; }
+.num_jumps_1  { color:#00bb00; }
+.num_jumps_2  { color:#00bb00; }
+.num_jumps_3  { color:#a5ab00; }
+.num_jumps_4  { color:#a5ab00; }
+.num_jumps_5  { color:#a5ab00; }
+.num_jumps_6  { color:#a5ab00; }
+.num_jumps_7  { color:#ab8500; }
+.num_jumps_8  { color:#ab8500; }
+.num_jumps_9  { color:#ab8500; }
+.num_jumps_10 { color:#ab8500; }
+.num_jumps_11 { color:#e07e00; }
+.num_jumps_12 { color:#e07e00; }
+.num_jumps_13 { color:#e07e00; }
+.num_jumps_14 { color:#e07e00; }
+.num_jumps_15 { color:#e00000; }
+
+.type_id { color:gray; } /* any time we display the type_id */
+
+img.igb_market { padding-left:3px; }
+
+
+
+
+.error     { color:#ff0000; }
+.ok        { color:#00ff00; }
+.debug     { color:#44ff44; } /* debug messages */
+
+.good       { color:#00ff00; }
+.bad        { color:#ff0000; }
+.soso       { color:#ab8500; }
+.neutral    { color:#888888; }
+.good_bg    { background-color:#008800; }
+.bad_bg     { background-color:#880000; }
+.soso_bg    { background-color:#554200; }
+.neutral_bg { background-color:#444444; }
+th.sell     { background-color:#550000; text-align:center; }
+th.buy      { background-color:#005500; text-align:center; }
+td.sell     { background-color:#440000; }
+td.buy      { background-color:#004400; }
+
+span.api_required { color:#ff0000; font-weight:bold; }
+span.station_name_small { font-size:x-small; } /* when displaying a station name as a subtext */
+span.api_last_update    { font-size:x-small; } /* date the api was last updated */
+
+span.money_country     { font-size:small; } /* f_functions.php:format_money2(), the "country" part */
+span.money_negative    { color:#ff0000;   } /* f_functions.php:format_money2(), if the value is negative */
+span.isk_format_isk    { font-size:x-small; color:#888888; } /* f_functions.php:isk_format(), the "isk" portion */
+span.volume_format_vol { font-size:x-small; color:#888888; } /* f_functions.php:volume_format(), the "m^3" portion */
+span.sec_null          { color:#ff0000;   } /* 0.0 systems */
+span.sec_low           { color:#f7941d;   } /* lowsec systems */
+span.sec_high          { color:#5dd850;   } /* highsec systems */
+span.small             { font-size:small; } /* for small text */
+
+div.h_comment          { font-style:italic; padding:5px; margin:7px; border:1px solid #444444; background-color:#222222; } /* for comments that go below headings */
+
+/* form inputs */
+input.region_name { width:200px; margin-top:0px; margin-bottom:0px; }
+input.type_name   { width:300px; margin-top:0px; margin-bottom:0px; }
+input.price       { width:50px;  margin-top:0px; margin-bottom:0px; }
+input.slider_text { background-color:#232323; color:#f6931f; font-weight:bold; border:1px solid #888888; padding: 1px 5px 1px 4px; margin:3px; }
+
+div.div_inline { display:inline; } /* display the div inline */
+
+.footer {
+ padding:3px;
+ margin:3px;
+ font-size:9px;
+}
+
+
+
+div.envision_full_width_chart { width: 800px; margin: 24px auto 0px auto; }
+
+
+div.log            { border:1px solid #008800; padding:5px; margin:5px; background-color:#001100; }
+div.log h3         {  }
+div.log table      {  }
+div.log td         { vertical-align:top; border-top:1px solid #888888; }
+div.log td.created {  }
+div.log td.name    {  }
+div.log td.message {  }
+div.log ul         {  }
+div.log li         {  }
+
+
+
+
+div.php_user_expired    { padding:2 5 2 5; background-color:red;    }
+div.php_user_active     { padding:2 5 2 5; background-color:green;  }
+div.php_user_mydiscount { padding:2 5 2 5; background-color:purple; }
+td.php_user_total       { border-top:1px solid white; }
+.php_user_line_isk      { background-color:#141474;  }
+.php_user_line_cash     { background-color:#1b7414; }
+th.php_user_line_isk    { text-align:center;  }
+th.php_user_line_cash   { text-align:center; }
+
+
+
+
+
+table.pi_grid { padding:0px; }
+table.pi_grid li { padding:0px; margin:0px; }
+table.pi_grid td { border:1px solid #888888; }
+table.pi_grid td.planets     { text-align:left; }
+table.pi_grid td.raw         { text-align:center; }
+table.pi_grid td.processed   { text-align:center; }
+table.pi_grid td.refined     { text-align:center; }
+table.pi_grid td.specialized { text-align:center; }
+table.pi_grid td.advanced    { text-align:center; }
+table.pi_grid th.planets     { text-align:center; }
+table.pi_grid th.raw         { text-align:center; }
+table.pi_grid th.processed   { text-align:center; }
+table.pi_grid th.refined     { text-align:center; }
+table.pi_grid th.specialized { text-align:center; }
+table.pi_grid th.advanced    { text-align:center; }

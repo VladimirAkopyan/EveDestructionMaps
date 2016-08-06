@@ -1,0 +1,15 @@
+C:\Study\EveKillStats\eve-kill\bin\Release\eve-kill.exe.config
+C:\Study\EveKillStats\eve-kill\bin\Release\eve-kill.exe
+C:\Study\EveKillStats\eve-kill\bin\Release\eve-kill.pdb
+C:\Study\EveKillStats\eve-kill\bin\Release\ServiceStack.Text.dll
+C:\Study\EveKillStats\eve-kill\bin\Release\ServiceStack.Text.xml
+C:\Study\EveKillStats\eve-kill\obj\x86\Release\eve-kill.exe
+C:\Study\EveKillStats\eve-kill\obj\x86\Release\eve-kill.pdb
+C:\Study\EveKillStats\eve-kill\obj\x86\Release\eve-kill.csprojResolveAssemblyReference.cache
+C:\Study\EveKillStats\eve-kill\bin\Release\eve-kill.exe.manifest
+C:\Study\EveKillStats\eve-kill\bin\Release\eve-kill.application
+C:\Study\EveKillStats\eve-kill\obj\x86\Release\eve-kill.exe.manifest
+C:\Study\EveKillStats\eve-kill\obj\x86\Release\eve-kill.application
+F:\Study\Dissertation\Supporting Material\Eve Data Harvester\EveKillStats\eve-kill\bin\Release\eve-kill.exe.config
+F:\Study\Dissertation\Supporting Material\Eve Data Harvester\EveKillStats\eve-kill\obj\x86\Release\eve-kill.exe
+F:\Study\Dissertation\Supporting Material\Eve Data Harvester\EveKillStats\eve-kill\obj\x86\Release\eve-kill.pdb
