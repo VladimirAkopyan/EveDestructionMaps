@@ -5,9 +5,12 @@ I mapped destruction of ships in eve online for my final year project
 
 This is a very simple console applicaiton that connects to Zkillboard, donwloads ''kill-mails' - player death records, and connects to a local MSSQL server to save the data. 
 There is no ORM or any intelligence, if there isn't already a database with te correct name and schema, the operation will fail.
-The data aquired from killboards contains ID's of ships and equipment that were involved. The data that they are reffering to can be obtained from CCP, the company that develops Eve Online. 
+The data aquired from killboards contains ID's of ships and equipment that were involved. 
+
+The data that they are reffering to can be obtained from CCP, the company that develops Eve Online. 
 Currently you can get this data at: https://developers.eveonline.com/resource/resources
-If at the time you are reding this the company has moved the resources and the link is broken, search for "eve online static data export" and you should be able to find it.
+
+If at the time you are reading this the company has moved the resources and the link is broken, search for "eve online static data export" and you should be able to find it.
 This database forms the basis for the schema that this software is looking for. If you have basic SQL skills, you should be able to create a table for storing killmails without much trouble just by reading the code. 
 
 ##CrowdsourcingWebsite
