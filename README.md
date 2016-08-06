@@ -4,7 +4,7 @@ I mapped destruction of ships in eve online for my final year project
 ##Data Harvester
 
 This is a very simple console applicaiton that connects to Zkillboard, donwloads ''kill-mails' - player death records, and connects to a local MSSQL server to save the data. 
-There is no ORM or any intelligence, if there isn't already a database with te correct name and schema, the operation will fail.
+There is no ORM or any intelligence, if there isn't already a database with a correct name and schema, the operation will fail.
 The data aquired from killboards contains ID's of ships and equipment that were involved. 
 
 The data that they are reffering to can be obtained from CCP, the company that develops Eve Online. 
