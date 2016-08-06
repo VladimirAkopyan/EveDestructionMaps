@@ -1,0 +1,539 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     wekaFit3
+Instances:    673
+Attributes:   47
+              Ship
+              killID
+              Time
+              damage
+              Class
+              Cargo
+              Weapons
+              WeaponUpgr
+              ECM
+              Drugs
+              ExCargo
+              Commod
+              Valuables
+              Drones
+              Analyzers
+              Warp Speed
+              Maneuverability
+              Size
+              WeaponSize
+              DroneBay
+              LockSpeed
+              Power bank
+              SecurityStatus
+              Remote Reps
+              Remote Assistance
+              Mining
+              Scanning
+              SpeedMods
+              Ewar
+              CapPower
+              Cloack
+              Salvager
+              Warp Scrambler
+              Stasis Web
+              Propultion Module
+              Cynosural Field
+              Energy Destabilizer
+              Capacitor Booster
+              Ice Product
+              Interdiction Probe
+              Shield Extender
+              Shield Booster
+              Sresist
+              Repper
+              Aresist
+              NofGates
+              Fit
+Test mode:7-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Maneuverability <= 7.930214
+|   Mining <= 3
+|   |   Power bank <= 4200: Hauling (17.0)
+|   |   Power bank > 4200
+|   |   |   Warp Speed <= 1.5
+|   |   |   |   damage <= 650459: Logi (3.0)
+|   |   |   |   damage > 650459
+|   |   |   |   |   Maneuverability <= 1.973335: Capital Warfare (24.0/2.0)
+|   |   |   |   |   Maneuverability > 1.973335
+|   |   |   |   |   |   SecurityStatus <= -0.446575: PvP Generic (2.0/1.0)
+|   |   |   |   |   |   SecurityStatus > -0.446575: Logi (2.0)
+|   |   |   Warp Speed > 1.5: PvP Generic (5.0)
+|   Mining > 3: Mining (17.0)
+Maneuverability > 7.930214
+|   Cynosural Field <= 0
+|   |   NofGates <= 0
+|   |   |   Mining <= 1
+|   |   |   |   Size <= 49
+|   |   |   |   |   DroneBay <= 0
+|   |   |   |   |   |   Class = Strategic Cruiser: Tackle (0.0)
+|   |   |   |   |   |   Class = Destroyer: Tackle (0.0)
+|   |   |   |   |   |   Class = Frigate: Tackle (2.0)
+|   |   |   |   |   |   Class = Mining Barge: Tackle (0.0)
+|   |   |   |   |   |   Class = Combat Battlecruiser: Tackle (0.0)
+|   |   |   |   |   |   Class = Battleship: Tackle (0.0)
+|   |   |   |   |   |   Class = Interceptor: Tackle (0.0)
+|   |   |   |   |   |   Class = Cruiser: Tackle (0.0)
+|   |   |   |   |   |   Class = Dreadnought: Tackle (0.0)
+|   |   |   |   |   |   Class = Assault Frigate: Tackle (0.0)
+|   |   |   |   |   |   Class = Industrial: Tackle (0.0)
+|   |   |   |   |   |   Class = Capsule: Hauling (2.0/1.0)
+|   |   |   |   |   |   Class = Stealth Bomber: Cloacky (1.0)
+|   |   |   |   |   |   Class = Combat Recon Ship: Tackle (0.0)
+|   |   |   |   |   |   Class = Covert Ops: Tackle (0.0)
+|   |   |   |   |   |   Class = Deep Space Transport: Tackle (0.0)
+|   |   |   |   |   |   Class = Carrier: Tackle (0.0)
+|   |   |   |   |   |   Class = Rookie ship: Tackle (0.0)
+|   |   |   |   |   |   Class = Heavy Assault Cruiser: Tackle (0.0)
+|   |   |   |   |   |   Class = Heavy Interdiction Cruiser: Tackle (0.0)
+|   |   |   |   |   |   Class = Interdictor: Tackle (0.0)
+|   |   |   |   |   |   Class = Attack Battlecruiser: Tackle (0.0)
+|   |   |   |   |   |   Class = Logistics: Tackle (0.0)
+|   |   |   |   |   |   Class = Supercarrier: Tackle (0.0)
+|   |   |   |   |   |   Class = Industrial Command Ship: Tackle (0.0)
+|   |   |   |   |   |   Class = Force Recon Ship: Tackle (0.0)
+|   |   |   |   |   |   Class = Exhumer: Tackle (0.0)
+|   |   |   |   |   |   Class = Marauder: Tackle (0.0)
+|   |   |   |   |   |   Class = Electronic Attack Ship: Tackle (0.0)
+|   |   |   |   |   |   Class = Blockade Runner: Tackle (0.0)
+|   |   |   |   |   |   Class = Titan: Tackle (0.0)
+|   |   |   |   |   |   Class = Command Ship: Tackle (0.0)
+|   |   |   |   |   |   Class = Freighter: Tackle (0.0)
+|   |   |   |   |   DroneBay > 0: Scanning (6.0)
+|   |   |   |   Size > 49
+|   |   |   |   |   Scanning <= 0
+|   |   |   |   |   |   ECM <= 1
+|   |   |   |   |   |   |   Warp Scrambler <= 0: Sleepers (31.0/5.0)
+|   |   |   |   |   |   |   Warp Scrambler > 0: PvP Generic (12.0/1.0)
+|   |   |   |   |   |   ECM > 1
+|   |   |   |   |   |   |   Ship = Legion: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Thrasher: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Imperial Navy Slicer: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Retriever: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Gnosis: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Condor: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Dominix: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Hurricane: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Merlin: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Ferox: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Federation Navy Comet: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Taranis: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Scythe: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Maller: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Ashimmu: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Vexor: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Crow: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Moros: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Retribution: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Myrmidon: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Tayra: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Drake: Sleepers (2.0/1.0)
+|   |   |   |   |   |   |   Ship = Heron: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Capsule: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Executioner: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Catalyst: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Caracal: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Republic Fleet Firetail: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Sigil: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Omen: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Malediction: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Omen Navy Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Exequror: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Thorax: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Ares: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Punisher: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Slasher: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Procurer: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Rifter: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Purifier: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Rook: E-War (2.0)
+|   |   |   |   |   |   |   Ship = Rupture: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Anathema: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Tengu: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Jaguar: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Enyo: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Iteron Mark V: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Occator: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Ishkur: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Chimera: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Hurricane Fleet Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Bestower: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Moa: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Ibis: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Cerberus: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Thanatos: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Zealot: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Harbinger Navy Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Devoter: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Sabre: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Megathron Navy Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Deimos: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Augoror Navy Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Algos: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Naga: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Atron: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Breacher: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Magnate: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Tristan: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Arbitrator: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Venture: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Scimitar: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Nyx: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Vagabond: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Guardian: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Orca: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Vigil: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Falcon: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Mackinaw: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Stabber Fleet Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Hound: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Augoror: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Inquisitor: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Kestrel: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Proteus: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Kronos: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Corax: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Prophecy: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Loki: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Ishtar: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Pilgrim: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Stiletto: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Sentinel: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Incursus: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Typhoon: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Buzzard: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Apocalypse: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Daredevil: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Scythe Fleet Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Megathron: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Manticore: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Brutix: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Wreathe: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Hawk: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Dramiel: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Rapier: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Celestis: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Aeon: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Crusader: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Talos: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Archon: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Sukuuvestaa Heron: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Tormentor: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Imicus: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Cheetah: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Probe: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Reaper: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Miasmos: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Talwar: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Vengeance: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Covetor: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Viator: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Raven: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Hyperion: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Helios: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Cynabal: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Navitas: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Oracle: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Wolf: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Flycatcher: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Harpy: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Curse: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Cormorant: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Osprey: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Vherokior Probe: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Nemesis: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Stabber: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Revelation: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Armageddon: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Griffin: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Crucifier: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Mammoth: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Drake Navy Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Vargur: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Vexor Navy Issue: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Dragoon: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Crane: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Erebus: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Caldari Navy Hookbill: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Abaddon: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Impairor: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Nereus: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Nightmare: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Claymore: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Sacrilege: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Capsule - Genolution 'Auroral' 197-variant: E-War (0.0)
+|   |   |   |   |   |   |   Ship = Obelisk: E-War (0.0)
+|   |   |   |   |   Scanning > 0
+|   |   |   |   |   |   killID <= 34256834: Hauling (4.0/2.0)
+|   |   |   |   |   |   killID > 34256834: Scan-Sites (4.0/1.0)
+|   |   |   Mining > 1: Mining (6.0)
+|   |   NofGates > 0
+|   |   |   Scanning <= 0
+|   |   |   |   Weapons <= 1
+|   |   |   |   |   Ship = Legion: PvP Generic (3.0/1.0)
+|   |   |   |   |   Ship = Thrasher: PvP Generic (0.0)
+|   |   |   |   |   Ship = Imperial Navy Slicer: PvP Generic (0.0)
+|   |   |   |   |   Ship = Retriever: PvP Generic (0.0)
+|   |   |   |   |   Ship = Gnosis: PvP Generic (0.0)
+|   |   |   |   |   Ship = Condor: PvP Generic (0.0)
+|   |   |   |   |   Ship = Dominix: PvP Generic (11.0)
+|   |   |   |   |   Ship = Hurricane: PvP Generic (0.0)
+|   |   |   |   |   Ship = Merlin: PvP Generic (0.0)
+|   |   |   |   |   Ship = Ferox: PvP Generic (0.0)
+|   |   |   |   |   Ship = Federation Navy Comet: PvP Generic (0.0)
+|   |   |   |   |   Ship = Taranis: PvP Generic (0.0)
+|   |   |   |   |   Ship = Scythe: Logi (4.0)
+|   |   |   |   |   Ship = Maller: PvP Generic (0.0)
+|   |   |   |   |   Ship = Ashimmu: PvP Generic (4.0/2.0)
+|   |   |   |   |   Ship = Vexor: PvP Generic (3.0/1.0)
+|   |   |   |   |   Ship = Crow: PvP Generic (0.0)
+|   |   |   |   |   Ship = Moros: PvP Generic (0.0)
+|   |   |   |   |   Ship = Retribution: PvP Generic (0.0)
+|   |   |   |   |   Ship = Myrmidon: PvP Generic (0.0)
+|   |   |   |   |   Ship = Tayra: PvP Generic (0.0)
+|   |   |   |   |   Ship = Drake: PvP Generic (0.0)
+|   |   |   |   |   Ship = Heron: PvP Generic (0.0)
+|   |   |   |   |   Ship = Capsule: PvP Generic (30.56/15.0)
+|   |   |   |   |   Ship = Executioner: PvP Generic (0.0)
+|   |   |   |   |   Ship = Catalyst: PvP Generic (0.0)
+|   |   |   |   |   Ship = Caracal: PvP Generic (0.0)
+|   |   |   |   |   Ship = Republic Fleet Firetail: PvP Generic (0.0)
+|   |   |   |   |   Ship = Sigil: Hauling (1.0)
+|   |   |   |   |   Ship = Omen: PvP Generic (0.0)
+|   |   |   |   |   Ship = Malediction: Tackle (1.0)
+|   |   |   |   |   Ship = Omen Navy Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Exequror: Logi (4.0/2.0)
+|   |   |   |   |   Ship = Thorax: PvP Generic (0.0)
+|   |   |   |   |   Ship = Ares: PvP Generic (0.0)
+|   |   |   |   |   Ship = Punisher: Tackle (1.0)
+|   |   |   |   |   Ship = Slasher: PvP Generic (0.0)
+|   |   |   |   |   Ship = Procurer: Mining (1.0)
+|   |   |   |   |   Ship = Rifter: PvP Generic (0.0)
+|   |   |   |   |   Ship = Purifier: PvP Generic (0.0)
+|   |   |   |   |   Ship = Rook: PvP Generic (0.0)
+|   |   |   |   |   Ship = Rupture: PvP Generic (0.0)
+|   |   |   |   |   Ship = Anathema: PvP Generic (0.0)
+|   |   |   |   |   Ship = Tengu
+|   |   |   |   |   |   Commod <= 0: PvP Generic (2.0)
+|   |   |   |   |   |   Commod > 0: E-War (2.0/1.0)
+|   |   |   |   |   Ship = Jaguar: PvP Generic (0.0)
+|   |   |   |   |   Ship = Enyo: PvP Generic (0.0)
+|   |   |   |   |   Ship = Iteron Mark V: Hauling (5.0)
+|   |   |   |   |   Ship = Occator: PvP Generic (0.0)
+|   |   |   |   |   Ship = Ishkur: PvP Generic (0.0)
+|   |   |   |   |   Ship = Chimera: PvP Generic (0.0)
+|   |   |   |   |   Ship = Hurricane Fleet Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Bestower: PvP Generic (0.0)
+|   |   |   |   |   Ship = Moa: PvP Generic (0.0)
+|   |   |   |   |   Ship = Ibis: PvP Generic (0.0)
+|   |   |   |   |   Ship = Cerberus: PvP Generic (0.0)
+|   |   |   |   |   Ship = Thanatos: PvP Generic (0.0)
+|   |   |   |   |   Ship = Zealot: PvP Generic (0.0)
+|   |   |   |   |   Ship = Harbinger Navy Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Devoter: PvP Generic (0.0)
+|   |   |   |   |   Ship = Sabre: PvP Generic (0.0)
+|   |   |   |   |   Ship = Megathron Navy Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Deimos: PvP Generic (0.0)
+|   |   |   |   |   Ship = Augoror Navy Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Algos: PvP Generic (0.0)
+|   |   |   |   |   Ship = Naga: PvP Generic (0.0)
+|   |   |   |   |   Ship = Atron: PvP Generic (0.0)
+|   |   |   |   |   Ship = Breacher: PvP Generic (0.0)
+|   |   |   |   |   Ship = Magnate: PvP Generic (0.0)
+|   |   |   |   |   Ship = Tristan: PvP Generic (0.0)
+|   |   |   |   |   Ship = Arbitrator: PvP Generic (0.0)
+|   |   |   |   |   Ship = Venture: Mining (3.0)
+|   |   |   |   |   Ship = Scimitar: Logi (1.0)
+|   |   |   |   |   Ship = Nyx: PvP Generic (0.0)
+|   |   |   |   |   Ship = Vagabond: PvP Generic (0.0)
+|   |   |   |   |   Ship = Guardian
+|   |   |   |   |   |   killID <= 37365270: Logi (2.0)
+|   |   |   |   |   |   killID > 37365270: PvP Generic (2.0)
+|   |   |   |   |   Ship = Orca: PvP Generic (0.0)
+|   |   |   |   |   Ship = Vigil: E-War (2.0)
+|   |   |   |   |   Ship = Falcon: E-War (1.0)
+|   |   |   |   |   Ship = Mackinaw: PvP Generic (0.0)
+|   |   |   |   |   Ship = Stabber Fleet Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Hound: Cloacky (2.0)
+|   |   |   |   |   Ship = Augoror: Logi (3.0)
+|   |   |   |   |   Ship = Inquisitor: PvP Generic (0.0)
+|   |   |   |   |   Ship = Kestrel: PvP Generic (0.0)
+|   |   |   |   |   Ship = Proteus: PvP Generic (2.0)
+|   |   |   |   |   Ship = Kronos: PvP Generic (0.0)
+|   |   |   |   |   Ship = Corax: PvP Generic (0.0)
+|   |   |   |   |   Ship = Prophecy: PvP Generic (0.0)
+|   |   |   |   |   Ship = Loki: PvP Generic (4.0/3.0)
+|   |   |   |   |   Ship = Ishtar: PvP Generic (2.0)
+|   |   |   |   |   Ship = Pilgrim: PvP Generic (1.0)
+|   |   |   |   |   Ship = Stiletto: PvP Generic (0.0)
+|   |   |   |   |   Ship = Sentinel: PvP Generic (2.0)
+|   |   |   |   |   Ship = Incursus: PvP Generic (0.0)
+|   |   |   |   |   Ship = Typhoon: PvP Generic (0.0)
+|   |   |   |   |   Ship = Buzzard: PvP Generic (0.0)
+|   |   |   |   |   Ship = Apocalypse: PvP Generic (0.0)
+|   |   |   |   |   Ship = Daredevil: PvP Generic (0.0)
+|   |   |   |   |   Ship = Scythe Fleet Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Megathron: PvP Generic (0.0)
+|   |   |   |   |   Ship = Manticore: PvP Generic (0.0)
+|   |   |   |   |   Ship = Brutix: PvP Generic (0.0)
+|   |   |   |   |   Ship = Wreathe: PvP Generic (0.0)
+|   |   |   |   |   Ship = Hawk: PvP Generic (0.0)
+|   |   |   |   |   Ship = Dramiel: PvP Generic (0.0)
+|   |   |   |   |   Ship = Rapier: PvP Generic (0.0)
+|   |   |   |   |   Ship = Celestis: PvP Generic (0.0)
+|   |   |   |   |   Ship = Aeon: PvP Generic (0.0)
+|   |   |   |   |   Ship = Crusader: PvP Generic (0.0)
+|   |   |   |   |   Ship = Talos: PvP Generic (0.0)
+|   |   |   |   |   Ship = Archon: PvP Generic (0.0)
+|   |   |   |   |   Ship = Sukuuvestaa Heron: PvP Generic (0.0)
+|   |   |   |   |   Ship = Tormentor: PvP Generic (0.0)
+|   |   |   |   |   Ship = Imicus: PvP Generic (0.0)
+|   |   |   |   |   Ship = Cheetah: PvP Generic (0.0)
+|   |   |   |   |   Ship = Probe: PvP Generic (0.0)
+|   |   |   |   |   Ship = Reaper: PvP Generic (0.0)
+|   |   |   |   |   Ship = Miasmos: Hauling (1.0)
+|   |   |   |   |   Ship = Talwar: PvP Generic (0.0)
+|   |   |   |   |   Ship = Vengeance: PvP Generic (0.0)
+|   |   |   |   |   Ship = Covetor: PvP Generic (0.0)
+|   |   |   |   |   Ship = Viator: Hauling (1.0)
+|   |   |   |   |   Ship = Raven: PvP Generic (0.0)
+|   |   |   |   |   Ship = Hyperion: PvP Generic (0.0)
+|   |   |   |   |   Ship = Helios: PvP Generic (0.0)
+|   |   |   |   |   Ship = Cynabal: PvP Generic (0.0)
+|   |   |   |   |   Ship = Navitas: PvP Generic (2.0)
+|   |   |   |   |   Ship = Oracle: PvP Generic (0.0)
+|   |   |   |   |   Ship = Wolf: PvP Generic (0.0)
+|   |   |   |   |   Ship = Flycatcher: PvP Generic (0.0)
+|   |   |   |   |   Ship = Harpy: PvP Generic (0.0)
+|   |   |   |   |   Ship = Curse: E-War (1.0)
+|   |   |   |   |   Ship = Cormorant: PvP Generic (0.0)
+|   |   |   |   |   Ship = Osprey: Logi (1.0)
+|   |   |   |   |   Ship = Vherokior Probe: PvP Generic (0.0)
+|   |   |   |   |   Ship = Nemesis: PvP Generic (0.0)
+|   |   |   |   |   Ship = Stabber: PvP Generic (0.0)
+|   |   |   |   |   Ship = Revelation: PvP Generic (0.0)
+|   |   |   |   |   Ship = Armageddon: PvP Generic (0.0)
+|   |   |   |   |   Ship = Griffin: Hauling (2.0)
+|   |   |   |   |   Ship = Crucifier: E-War (1.0)
+|   |   |   |   |   Ship = Mammoth: Hauling (1.0)
+|   |   |   |   |   Ship = Drake Navy Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Vargur: PvP Generic (0.0)
+|   |   |   |   |   Ship = Vexor Navy Issue: PvP Generic (0.0)
+|   |   |   |   |   Ship = Dragoon: PvP Generic (0.0)
+|   |   |   |   |   Ship = Crane: Hauling (1.0)
+|   |   |   |   |   Ship = Erebus: PvP Generic (0.0)
+|   |   |   |   |   Ship = Caldari Navy Hookbill: PvP Generic (0.0)
+|   |   |   |   |   Ship = Abaddon: PvP Generic (0.0)
+|   |   |   |   |   Ship = Impairor: PvP Generic (0.0)
+|   |   |   |   |   Ship = Nereus: Hauling (1.0)
+|   |   |   |   |   Ship = Nightmare: PvP Generic (0.0)
+|   |   |   |   |   Ship = Claymore: PvP Generic (0.0)
+|   |   |   |   |   Ship = Sacrilege: PvP Generic (0.0)
+|   |   |   |   |   Ship = Capsule - Genolution 'Auroral' 197-variant: Hauling (1.0)
+|   |   |   |   |   Ship = Obelisk: PvP Generic (0.0)
+|   |   |   |   Weapons > 1
+|   |   |   |   |   Warp Scrambler <= 0
+|   |   |   |   |   |   CapPower <= 0
+|   |   |   |   |   |   |   Ewar <= 1: PvP Generic (47.0/6.0)
+|   |   |   |   |   |   |   Ewar > 1
+|   |   |   |   |   |   |   |   DroneBay <= 75: E-War (3.0)
+|   |   |   |   |   |   |   |   DroneBay > 75: PvP Generic (3.0)
+|   |   |   |   |   |   CapPower > 0
+|   |   |   |   |   |   |   Maneuverability <= 19.107672: PvE (9.0/2.0)
+|   |   |   |   |   |   |   Maneuverability > 19.107672: PvP Generic (3.0)
+|   |   |   |   |   Warp Scrambler > 0
+|   |   |   |   |   |   Cloack <= 0
+|   |   |   |   |   |   |   Remote Reps <= 1: PvP Generic (254.0/45.0)
+|   |   |   |   |   |   |   Remote Reps > 1: Tackle (2.0/1.0)
+|   |   |   |   |   |   Cloack > 0
+|   |   |   |   |   |   |   Stasis Web <= 0
+|   |   |   |   |   |   |   |   SpeedMods <= 0: Cloacky (2.0)
+|   |   |   |   |   |   |   |   SpeedMods > 0
+|   |   |   |   |   |   |   |   |   killID <= 35232706: PvP Generic (2.0)
+|   |   |   |   |   |   |   |   |   killID > 35232706: Cloacky (3.0)
+|   |   |   |   |   |   |   Stasis Web > 0: PvP Generic (6.0/2.0)
+|   |   |   Scanning > 0
+|   |   |   |   Shield Extender <= 0
+|   |   |   |   |   Valuables <= 3
+|   |   |   |   |   |   Weapons <= 0: Scanning (13.92/3.92)
+|   |   |   |   |   |   Weapons > 0: Scan-Sites (6.0/1.0)
+|   |   |   |   |   Valuables > 3: Mining (2.1/1.1)
+|   |   |   |   Shield Extender > 0
+|   |   |   |   |   DroneBay <= 5: Tackle (5.34/1.34)
+|   |   |   |   |   DroneBay > 5: PvP Generic (2.0/1.0)
+|   Cynosural Field > 0
+|   |   Weapons <= 2
+|   |   |   Ewar <= 0
+|   |   |   |   Aresist <= 0
+|   |   |   |   |   Power bank <= 125: Hauling (4.82/1.76)
+|   |   |   |   |   Power bank > 125: Cyno (39.0/5.0)
+|   |   |   |   Aresist > 0: PvP Generic (4.17/2.1)
+|   |   |   Ewar > 0: PvP Generic (2.09/0.05)
+|   |   Weapons > 2: Tackle (2.0/1.0)
+
+Number of Leaves  : 	383
+
+Size of the tree : 	424
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         460               68.6567 %
+Incorrectly Classified Instances       210               31.3433 %
+Kappa statistic                          0.5431
+Mean absolute error                      0.057 
+Root mean squared error                  0.1942
+Relative absolute error                 51.8062 %
+Root relative squared error             83.0406 %
+Total Number of Instances              670     
+Ignored Class Unknown Instances                  3     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.5       0.008      0.667     0.5       0.571      0.888    Logi
+                 0.831     0.297      0.746     0.831     0.786      0.83     PvP Generic
+                 0.145     0.031      0.296     0.145     0.195      0.747    Tackle
+                 0.964     0.002      0.964     0.964     0.964      0.981    Mining
+                 0.7       0.023      0.583     0.7       0.636      0.902    Sleepers
+                 0.875     0.011      0.75      0.875     0.808      0.945    Capital Warfare
+                 0.214     0.011      0.3       0.214     0.25       0.772    E-War
+                 0.477     0.026      0.66      0.477     0.554      0.844    Hauling
+                 0.308     0.008      0.444     0.308     0.364      0.734    Scan-Sites
+                 0.143     0.017      0.154     0.143     0.148      0.614    PvE
+                 0.25      0.015      0.231     0.25      0.24       0.727    Cloacky
+                 0.944     0.022      0.708     0.944     0.81       0.956    Cyno
+                 0.688     0.005      0.786     0.688     0.733      0.871    Scanning
+Weighted Avg.    0.687     0.161      0.663     0.687     0.668      0.838
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   k   l   m   <-- classified as
+  10   6   0   0   0   4   0   0   0   0   0   0   0 |   a = Logi
+   4 285  11   0   7   3   3  13   1   9   5   2   0 |   b = PvP Generic
+   0  39   8   0   2   0   1   0   0   2   3   0   0 |   c = Tackle
+   0   0   0  27   0   0   0   0   0   0   0   0   1 |   d = Mining
+   0   4   2   0  21   0   1   1   0   0   0   1   0 |   e = Sleepers
+   0   2   0   0   1  21   0   0   0   0   0   0   0 |   f = Capital Warfare
+   0  10   0   0   1   0   3   0   0   0   0   0   0 |   g = E-War
+   0  20   2   1   2   0   2  31   1   0   0   6   0 |   h = Hauling
+   0   2   1   0   1   0   0   1   4   0   1   1   2 |   i = Scan-Sites
+   1   9   0   0   1   0   0   0   0   2   1   0   0 |   j = PvE
+   0   4   1   0   0   0   0   0   1   0   3   3   0 |   k = Cloacky
+   0   1   0   0   0   0   0   1   0   0   0  34   0 |   l = Cyno
+   0   0   2   0   0   0   0   0   2   0   0   1  11 |   m = Scanning
+
