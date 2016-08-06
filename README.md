@@ -1,5 +1,6 @@
 # EveDestructionMaps
-I mapped destruction of ships in eve online for my final year project
+I mapped destruction of ships in eve online for my final year project. The full dataset is about 10GB - a littel too large for Github! 
+However, there is little value is that spesific database file. This reporsitory would let you re-create my work fairly quickly.
 
 ##Data Harvester
 
@@ -25,7 +26,8 @@ Here is the SQL that I used to create aggregate vews. It's data aquired above, a
 You could really join this data in any way you want, and what I have here is definately sub-optimal. 
 
 ##Datasets
-This is what the data looks like right before I input it into machine learning.  
+This is what the data looks like right before I input it into machine learning.  For machine learning I used Knime and Weka.
+I would not claim that I knew what I was doing with them, but by poking at them and tweakinghte knobs I managed to get fairly decent results. 
 This folder contains two sets: training set with ~800 rows and a larger set wiht ~150,000 rows 
 The training set is already categorised through crowd-sourcing (last column). That is the player's judgement on the circumstances under which the victim was killed. 
 The Larger dataset is an extract from the database, this is the data I was classifying automatically. The entire database was a couple of Gigabytes
