@@ -1,6 +1,8 @@
 # EveDestructionMaps
 I mapped destruction of ships in eve online for my final year project. The full dataset is about 10GB - a littel too large for Github! 
 However, there is little value is that spesific database file. This reporsitory would let you re-create my work fairly quickly.
+You can find an article explaining my work on medium 
+https://medium.com/vladprojects/mapping-destruction-in-eve-online-cc88827cf705
 
 ##Data Harvester
 
