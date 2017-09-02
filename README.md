@@ -4,7 +4,7 @@ However, there is little value is that spesific database file. This reporsitory 
 You can find an article explaining my work on medium 
 https://medium.com/vladprojects/mapping-destruction-in-eve-online-cc88827cf705
 
-##Data Harvester
+## Data Harvester
 
 This is a very simple console applicaiton that connects to Zkillboard, donwloads ''kill-mails' - player death records, and connects to a local MSSQL server to save the data. 
 There is no ORM or any intelligence, if there isn't already a database with a correct name and schema, the operation will fail.
@@ -16,18 +16,18 @@ Currently you can get this data at: https://developers.eveonline.com/resource/re
 If at the time you are reading this the company has moved the resources and the link is broken, search for "eve online static data export" and you should be able to find it.
 This database forms the basis for the schema that this software is looking for. If you have basic SQL skills, you should be able to create a table for storing killmails without much trouble just by reading the code. 
 
-##CrowdsourcingWebsite
+## CrowdsourcingWebsite
 
 This is a simple PHP web-page that reads a CSV with kills that needs to be categorised, displays them in iFrame to Zkillboard and saves the player category to a different file. 
 *Anonymous Crowdsourced Data* shows direct output of this operation. Next I would import this into SQL server and join it with other data tables
 
-##SQL
+## SQL
 
 There is no SQL for creating 'Killmails' table, I used the SQL Management Studio GUI to do that. 
 Here is the SQL that I used to create aggregate vews. It's data aquired above, after some joins and transformations. 
 You could really join this data in any way you want, and what I have here is definately sub-optimal. 
 
-##Datasets
+## Datasets
 This is what the data looks like right before I input it into machine learning.  For machine learning I used Knime and Weka.
 I would not claim that I knew what I was doing with them, but by poking at them and tweakinghte knobs I managed to get fairly decent results. 
 This folder contains two sets: training set with ~800 rows and a larger set wiht ~150,000 rows 
