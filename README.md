@@ -36,6 +36,6 @@ This folder contains two sets: training set with ~800 rows and a larger set wiht
 The training set is already categorised through crowd-sourcing (last column). That is the player's judgement on the circumstances under which the victim was killed. 
 The Larger dataset is an extract from the database, this is the data I was classifying automatically. The entire database was a couple of Gigabytes
 
-![Visualisation Of the ML](Charts/Classifier Visualisation.png)
+![Visualisation Of the ML](Charts/Classifier%20Visualisation.png)
 
 
